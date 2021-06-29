@@ -15,7 +15,25 @@ const routes: Routes = [
   { path: 'safetyinspection', loadChildren: () => import('./admin/dashboard/safety/safetyinspection/safetyinspection.module').then(m => m.SafetyinspectionModule) }, 
   { path: 'safetypermit', loadChildren: () => import('./admin/dashboard/safety/safetypermit/safetypermit.module').then(m => m.SafetypermitModule) }, 
   { path: 'reports', loadChildren: () => import('./admin/dashboard/reports/reports.module').then(m => m.ReportsModule) }, 
-  { path: 'contactus', loadChildren: () => import('./admin/dashboard/contactus/contactus.module').then(m => m.ContactusModule) }];
+  { path: 'contactus', loadChildren: () => import('./admin/dashboard/contactus/contactus.module').then(m => m.ContactusModule) },
+  { path: 'superadmin/home', loadChildren: () => import('./buildcron/superadmin/dashboard/home/home.module').then(m => m.HomeModule) },
+  { path: 'superadmin/registrations', loadChildren: () => import('./buildcron/superadmin/dashboard/registrations/registrations.module').then(m => m.RegistrationsModule) },
+  { path: 'superadmin/licenses', loadChildren: () => import('./buildcron/superadmin/dashboard/licenses/licenses.module').then(m => m.LicensesModule) },
+  { path: 'superadmin/quality/checklist/master/library', loadChildren: () => import('./buildcron/superadmin/dashboard/quality/checklist/master/librarylist/librarylist.module').then(m => m.LibrarylistModule) },
+  { path: 'superadmin/quality/checklist/master/library/questions', loadChildren: () => import('./buildcron/superadmin/dashboard/quality/checklist/master/librarylist/questionlist/questionlist.module').then(m => m.QuestionlistModule) },
+  { path: 'superadmin/quality/testdata/master/library/questions', loadChildren: () => import('./buildcron/superadmin/dashboard/quality/testdata/master/librarylist/questionlist/questionlist.module').then(m => m.QuestionlistModule) },
+  { path: 'superadmin/quality/testdata/master/library', loadChildren: () => import('./buildcron/superadmin/dashboard/quality/testdata/master/librarylist/librarylist.module').then(m => m.LibrarylistModule) },
+  { path: 'superadmin/safety/checklist/master/library', loadChildren: () => import('./buildcron/superadmin/dashboard/safety/checklist/master/librarylist/librarylist.module').then(m => m.LibrarylistModule) },
+  { path: 'superadmin/safety/checklist/master/library/questions', loadChildren: () => import('./buildcron/superadmin/dashboard/safety/checklist/master/librarylist/questionlist/questionlist.module').then(m => m.QuestionlistModule) },
+  { path: 'superadmin/safety/testdata/master/library/questions', loadChildren: () => import('./buildcron/superadmin/dashboard/safety/testdata/master/librarylist/questionlist/questionlist.module').then(m => m.QuestionlistModule) },
+  { path: 'superadmin/safety/testdata/master/library', loadChildren: () => import('./buildcron/superadmin/dashboard/safety/testdata/master/librarylist/librarylist.module').then(m => m.LibrarylistModule) },
+  { path: 'superadmin/materials', loadChildren: () => import('./buildcron/superadmin/dashboard/materials/materials.module').then(m => m.MaterialsModule) },
+  { path: 'superadmin/siteinstructionreports', loadChildren: () => import('./buildcron/superadmin/dashboard/reports/siteinstructionreports/siteinstructionreports.module').then(m => m.SiteinstructionreportsModule) },
+  { path: 'superadmin/dailyreports', loadChildren: () => import('./buildcron/superadmin/dashboard/reports/dailyreports/dailyreports.module').then(m => m.DailyreportsModule) },
+  { path: 'superadmin/ncreports', loadChildren: () => import('./buildcron/superadmin/dashboard/reports/ncreports/ncreports.module').then(m => m.NcreportsModule) },
+  { path: 'superadmin/queries', loadChildren: () => import('./buildcron/superadmin/dashboard/queries/queries.module').then(m => m.QueriesModule) },
+  { path: 'superadmin/feedbacks', loadChildren: () => import('./buildcron/superadmin/dashboard/feedbacks/feedbacks.module').then(m => m.FeedbacksModule) },
+  { path: 'superadmin/faqs', loadChildren: () => import('./buildcron/superadmin/dashboard/faqs/faqs.module').then(m => m.FaqsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

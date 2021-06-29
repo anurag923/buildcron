@@ -10,7 +10,7 @@ import { LoginComponent } from './admin/auth/login/login.component';
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

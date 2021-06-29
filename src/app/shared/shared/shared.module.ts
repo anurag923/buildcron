@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../config/header/header.component';
 import { FooterComponent } from '../../config/footer/footer.component';
 import { SidenavComponent } from '../../config/sidenav/sidenav.component';
-
-
+import { SupersidenavComponent } from '../../config/supersidenav/supersidenav.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SidenavComponent
+    SidenavComponent,
+    SupersidenavComponent
   ],
   imports: [
     CommonModule
@@ -17,7 +17,8 @@ import { SidenavComponent } from '../../config/sidenav/sidenav.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidenavComponent
+    SidenavComponent,
+    SupersidenavComponent
   ]
 })
 export class SharedModule { }
