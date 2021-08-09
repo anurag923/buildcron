@@ -4,6 +4,7 @@ import { HeaderComponent } from '../../config/header/header.component';
 import { FooterComponent } from '../../config/footer/footer.component';
 import { SidenavComponent } from '../../config/sidenav/sidenav.component';
 import { SupersidenavComponent } from '../../config/supersidenav/supersidenav.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -12,7 +13,8 @@ import { SupersidenavComponent } from '../../config/supersidenav/supersidenav.co
     SupersidenavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
