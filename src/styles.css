@@ -3,3 +3,6 @@ a
 {
     cursor: pointer;
 }
+a:focus{
+    color:red;
+}
